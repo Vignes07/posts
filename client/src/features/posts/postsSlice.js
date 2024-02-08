@@ -16,7 +16,6 @@ const postsSlice = createSlice({
   name: "posts",
   initialState,
   reducers: {
-<<<<<<< HEAD
     addPost: {
       reducer: (state, action) => {
         state.posts.push(action.payload);
@@ -43,7 +42,6 @@ const postsSlice = createSlice({
       console.log(id);
       state.posts = state.posts.filter((post) => post.id !== id);
     },
-=======
     // addPost: {
     //   reducer: (state, action) => {
     //     state.posts.push(action.payload);
@@ -61,7 +59,6 @@ const postsSlice = createSlice({
     //   const existingPost = state.posts.find((post) => post.id === id);
     //   existingPost.reactions[reaction]++;
     // },
->>>>>>> 1a0034230cc8d2eae7cab7064fc288464c2fd8c9
   },
   extraReducers: (builder) => {
     builder
@@ -79,10 +76,6 @@ const postsSlice = createSlice({
   },
 });
 
-<<<<<<< HEAD
 export const { addPost, updatePost, removePost } = postsSlice.actions;
-=======
-export const { addPost, updatePost } = postsSlice.actions;
->>>>>>> 1a0034230cc8d2eae7cab7064fc288464c2fd8c9
 
 export default postsSlice.reducer;

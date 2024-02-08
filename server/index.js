@@ -9,8 +9,10 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+const password = process.env.MONGODB_PASSWORD;
+
 mongoose.connect(
-  "mongodb+srv://vignes:connected@cluster0.k5rcf0g.mongodb.net/posts?retryWrites=true&w=majority"
+  `mongodb+srv://vignes:${password}@cluster0.k5rcf0g.mongodb.net/posts?retryWrites=true&w=majority`
 );
 
 app.get("/", async (req, res) => {
