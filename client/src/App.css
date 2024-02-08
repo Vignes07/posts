@@ -53,10 +53,14 @@ h4 {
   padding: 5px 0;
   color: rgb(161, 158, 158);
   cursor: pointer;
+  background: transparent;
+  height: max-content;
 }
 
 .remove {
   display: none;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .inputs {
@@ -143,5 +147,6 @@ button {
     color: rgb(161, 158, 158);
     cursor: pointer;
     background: transparent;
+    height: max-content;
   }
 }

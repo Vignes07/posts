@@ -37,7 +37,7 @@ const Posts = ({ posts, handleReactions, handleRemove }) => {
                 type="button"
                 onClick={() => handleRemove(post._id)}
               >
-                <h4>X</h4>
+                X
               </button>
             </div>
             <div className="info">
