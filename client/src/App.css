@@ -136,7 +136,8 @@ button {
     gap: 1rem;
   }
 
-  .remove {
+  .remove,
+  .remove:active {
     display: flex;
     padding: 5px 0;
     color: rgb(161, 158, 158);
