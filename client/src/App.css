@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+#root {
+  inset: 0 auto;
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: start;
+  width: 40%;
+  height: 95vh;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  background: white;
+  border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 5px;
+  background: lightgray;
+  border-radius: 25px;
+}
+
+.posts-container {
+  padding-right: 0.5rem;
+  height: 50vh;
+  overflow-y: auto;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1px;
+}
+
+.postCard:hover .remove {
+  display: flex;
+  padding: 5px 0;
+  color: rgb(161, 158, 158);
+  cursor: pointer;
+  background: transparent;
+  height: max-content;
+}
+
+.remove {
+  display: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.button {
+  width: 25%;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.interactions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.reactionButton,
+button {
+  display: flex;
+  font-size: 14px;
+  border: none;
+  padding: 0;
+}
+
+.reactionButton:hover {
+  cursor: pointer;
+}
+
+.author {
+  font-size: 14px;
+  color: gray;
+}
+
+.time {
+  font-size: 14px;
+  color: gray;
+}
+
+.no-posts-found {
+  color: rgb(73, 71, 71);
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: start;
+    width: 90%;
+    height: 95vh;
+    padding: 1rem;
+    gap: 1rem;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: start;
+    width: 70%;
+    height: 95vh;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .remove,
+  .remove:active {
+    display: flex;
+    padding: 5px 0;
+    color: rgb(161, 158, 158);
+    cursor: pointer;
+    background: transparent;
+    height: max-content;
+  }
+}
