@@ -18,7 +18,7 @@ function App() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("https://vmc8j7-3000.csb.app", {
+      .post("https://posts-4dtq.onrender.com", {
         title,
         author,
         content,
@@ -34,11 +34,11 @@ function App() {
   };
 
   const handleReactions = async (id, name) => {
-    await axios.put(`https://vmc8j7-3000.csb.app/${id}/${name}`);
+    await axios.put(`https://posts-4dtq.onrender.com/${id}/${name}`);
   };
 
   const handleRemove = async (id) => {
-    await axios.delete(`https://vmc8j7-3000.csb.app/${id}`);
+    await axios.delete(`https://posts-4dtq.onrender.com/${id}`);
   };
 
   useEffect(() => {
