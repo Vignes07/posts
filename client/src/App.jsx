@@ -18,7 +18,7 @@ function App() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("https://posts-4dtq.onrender.com", {
+      .post("https://posts-4dtq.onrender.com/addPost", {
         title,
         author,
         content,
@@ -34,11 +34,11 @@ function App() {
   };
 
   const handleReactions = async (id, name) => {
-    await axios.put(`https://posts-4dtq.onrender.com/${id}/${name}`);
+    await axios.put(`https://posts-4dtq.onrender.com/update/${id}/${name}`);
   };
 
   const handleRemove = async (id) => {
-    await axios.delete(`https://posts-4dtq.onrender.com/${id}`);
+    await axios.delete(`https://posts-4dtq.onrender.com/remove/${id}`);
   };
 
   useEffect(() => {
