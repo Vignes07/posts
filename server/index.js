@@ -13,7 +13,7 @@ mongoose.connect(
   "mongodb+srv://vignes:connected@cluster0.k5rcf0g.mongodb.net/posts?retryWrites=true&w=majority"
 );
 
-app.get("/getPost", async (req, res) => {
+app.get("/", async (req, res) => {
   try {
     const result = await PostModel.find({});
     if (!result) {
