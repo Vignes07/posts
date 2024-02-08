@@ -6,7 +6,6 @@ import { useDispatch, useSelector } from "react-redux";
 import {
   selectAllPost,
   getPostsStatus,
-  getPostsError,
 } from "./features/posts/selector";
 import {
   fetchPosts,
@@ -21,7 +20,6 @@ function App() {
 
   const posts = useSelector(selectAllPost);
   const status = useSelector(getPostsStatus);
-  const error = useSelector(getPostsError);
 
   const [title, setTitle] = useState("");
   const [author, setAuthor] = useState("");
