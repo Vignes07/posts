@@ -17,7 +17,7 @@ h4 {
   flex-direction: column;
   margin: auto;
   justify-content: start;
-  width: 30%;
+  width: 40%;
   height: 95vh;
   padding: 1rem;
   gap: 1rem;
@@ -109,4 +109,30 @@ button {
 .top {
   display: flex;
   justify-content: space-between;
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: start;
+    width: 90%;
+    height: 95vh;
+    padding: 1rem;
+    gap: 1rem;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: start;
+    width: 70%;
+    height: 95vh;
+    padding: 1rem;
+    gap: 1rem;
+  }
 }
