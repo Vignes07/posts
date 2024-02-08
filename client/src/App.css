@@ -135,4 +135,11 @@ button {
     padding: 1rem;
     gap: 1rem;
   }
+
+  .remove {
+    display: flex;
+    padding: 5px 0;
+    color: rgb(161, 158, 158);
+    cursor: pointer;
+  }
 }
