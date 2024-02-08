@@ -18,7 +18,7 @@ function App() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:3000/addPost", {
+      .post("https://vmc8j7-3000.csb.app", {
         title,
         author,
         content,
@@ -34,11 +34,11 @@ function App() {
   };
 
   const handleReactions = async (id, name) => {
-    await axios.put(`http://localhost:3000/update/${id}/${name}`);
+    await axios.put(`https://vmc8j7-3000.csb.app/${id}/${name}`);
   };
 
   const handleRemove = async (id) => {
-    await axios.delete(`http://localhost:3000/remove/${id}`);
+    await axios.delete(`https://vmc8j7-3000.csb.app/${id}`);
   };
 
   useEffect(() => {
