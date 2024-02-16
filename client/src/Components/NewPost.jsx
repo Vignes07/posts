@@ -11,15 +11,6 @@ const NewPost = ({
   setContent,
   handleSubmit,
 }) => {
-  NewPost.propTypes = {
-    title: PropTypes.string.isRequired,
-    setTitle: PropTypes.func.isRequired,
-    author: PropTypes.string.isRequired,
-    setAuthor: PropTypes.func.isRequired,
-    content: PropTypes.string.isRequired,
-    setContent: PropTypes.func.isRequired,
-    handleSubmit: PropTypes.func.isRequired,
-  };
 
   const [isDisabled, setIsDisabled] = useState(false);
 
@@ -74,6 +65,16 @@ const NewPost = ({
       </div>
     </form>
   );
+};
+
+NewPost.propTypes = {
+  title: PropTypes.string.isRequired,
+  setTitle: PropTypes.func.isRequired,
+  author: PropTypes.string.isRequired,
+  setAuthor: PropTypes.func.isRequired,
+  content: PropTypes.string.isRequired,
+  setContent: PropTypes.func.isRequired,
+  handleSubmit: PropTypes.func.isRequired,
 };
 
 export default NewPost;
